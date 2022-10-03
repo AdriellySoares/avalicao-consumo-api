@@ -1,0 +1,28 @@
+{
+  "telefones": [
+    {
+      "id": 1,
+      "nome": "Felipe",
+      "numero": "9834-1288",
+      "cidade": "Fortaleza"
+    },
+    {
+      "id": 2,
+      "nome": "Luiza",
+      "numero": "97746-7777",
+      "cidade": "Piaui"
+    },
+    {
+      "id": 3,
+      "nome": "Luiz",
+      "numero": "9066-6476",
+      "cidade": "Rio de janeiro"
+    },
+    {
+      "id": 4,
+      "nome": "Daniel",
+      "numero": "9885-5347",
+      "cidade": "Joao"
+    }
+  ]
+}
