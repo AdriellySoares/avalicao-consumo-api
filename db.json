@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nome": "Felipe",
-      "numero": "9834-1288",
+      "numero": "(85) 9834-1288",
       "cidade": "Fortaleza"
     },
     {
@@ -22,7 +22,13 @@
       "id": 4,
       "nome": "Daniel",
       "numero": "9885-5347",
-      "cidade": "Joao"
+      "cidade": "João Pessoa"
+    },
+    {
+      "nome": "Mel",
+      "numero": "99458-3845",
+      "cidade": "Roraima",
+      "id": 5
     }
   ]
 }
