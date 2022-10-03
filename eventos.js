@@ -63,6 +63,7 @@ function atualizarlista(){
         lista.forEach((cadaItem) => {
             tabela_telefones.innerHTML +=`
             <tr>
+            
             <td>${cadaItem.id}</td>
             <td>${cadaItem.nome}</td>
             <td>${cadaItem.numero}</td>
