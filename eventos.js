@@ -1,5 +1,13 @@
 const API_URL = 'http://localhost:8500'
 
+function marcarTodos() {
+    let todos = document.querySelectorAll('[data-acao="check"]');
+
+    todos.forEach((cadaCheck) => {
+        cadaCheck.checked = check_all.checked;
+    })
+}
+
 function inserir(){
     event.preventDefault();
     let dados ={
@@ -63,17 +71,17 @@ function atualizarlista(){
         lista.forEach((cadaItem) => {
             tabela_telefones.innerHTML +=`
             <tr>
-            
-            <td>${cadaItem.id}</td>
-            <td>${cadaItem.nome}</td>
-            <td>${cadaItem.numero}</td>
-            <td>${cadaItem.cidade}</td>
+                <td> <input onclick="acionarBotaoexcluir()" data-acao="check" type="checkbox"> </td>
+                <td>${cadaItem.id}</td>
+                <td>${cadaItem.nome}</td>
+                <td>${cadaItem.numero}</td>
+                <td>${cadaItem.cidade}</td>
             <td>
-            <button onclick="buscarparaeditar(${cadaItem.id})" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditar" class="btn btn-outline-warning btn-sm">
-            Editar
+                <button onclick="buscarparaeditar(${cadaItem.id})" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditar" class="btn btn-outline-warning btn-sm">
+                    Editar
             </button> 
-            <button onclick="excluir(${cadaItem.id})" class="btn btn-outline-danger">
-            Excluir
+                <button onclick="excluir(${cadaItem.id})" class="btn btn-outline-danger">
+                    Excluir
             </button>
             </td>
             </tr>`;
